@@ -1,0 +1,15 @@
+views:
+  - type: table
+    name: Таблица
+    filters:
+      and:
+        - file.inFolder("Конспекты")
+    order:
+      - file.name
+      - курс
+      - дисциплина
+      - tags
+    sort:
+      - property: file.ctime
+        direction: DESC
+    cardSize: 50

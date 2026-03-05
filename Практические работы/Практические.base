@@ -1,0 +1,20 @@
+views:
+  - type: table
+    name: Таблица
+    filters:
+      and:
+        - and:
+            - file.folder == "Практические работы"
+            - преподаватель == "Самойлов В. В."
+    order:
+      - file.name
+      - tags
+      - курс
+      - преподаватель
+      - сдано
+      - file.embeds
+    sort:
+      - property: конспект/практическая
+        direction: ASC
+      - property: tags
+        direction: ASC

@@ -1,0 +1,104 @@
+{
+  "biggerIcons": "mobile",
+  "clickableIcons": "desktop",
+  "showAllFileIcons": false,
+  "showAllFolderIcons": false,
+  "minimalFolderIcons": false,
+  "showMarkdownTabIcons": true,
+  "showTitleIcons": true,
+  "showTagPillIcons": true,
+  "showMenuActions": true,
+  "showSuggestionIcons": true,
+  "showQuickSwitcherIcons": true,
+  "showMoveFileIcons": true,
+  "showItemName": "desktop",
+  "biggerSearchResults": "mobile",
+  "maxSearchResults": 50,
+  "colorPicker1": "list",
+  "colorPicker2": "rgb",
+  "uncolorHover": false,
+  "uncolorDrag": false,
+  "uncolorSelect": false,
+  "uncolorQuick": false,
+  "rememberDeletedItems": false,
+  "maxBackups": 5,
+  "dialogState": {
+    "iconMode": true,
+    "emojiMode": false,
+    "rulePage": "file"
+  },
+  "appIcons": {},
+  "tabIcons": {},
+  "fileIcons": {
+    "Cache": {
+      "icon": "lucide-boxes",
+      "unsynced": [
+        "773cb68bc25c0529",
+        "acc1d33a16935bf1"
+      ],
+      "color": "yellow"
+    },
+    "Diary": {
+      "icon": "lucide-book-check",
+      "unsynced": [
+        "773cb68bc25c0529",
+        "acc1d33a16935bf1"
+      ],
+      "color": "green"
+    },
+    "Excalidraw": {
+      "icon": "excalidraw-icon",
+      "unsynced": [
+        "773cb68bc25c0529",
+        "acc1d33a16935bf1"
+      ],
+      "color": "red"
+    },
+    "Templates": {
+      "icon": "lucide-save-all",
+      "color": "gray",
+      "unsynced": [
+        "773cb68bc25c0529",
+        "acc1d33a16935bf1"
+      ]
+    },
+    "Конспекты": {
+      "icon": "lucide-notebook-pen",
+      "unsynced": [
+        "773cb68bc25c0529",
+        "acc1d33a16935bf1"
+      ],
+      "color": "cyan"
+    },
+    "Отчётность": {
+      "icon": "lucide-chart-pie",
+      "unsynced": [
+        "773cb68bc25c0529",
+        "acc1d33a16935bf1"
+      ],
+      "color": "green"
+    },
+    "Практические работы": {
+      "icon": "lucide-scale",
+      "unsynced": [
+        "773cb68bc25c0529",
+        "acc1d33a16935bf1"
+      ],
+      "color": "red"
+    },
+    "Проекты": {
+      "icon": "lucide-presentation",
+      "unsynced": [
+        "773cb68bc25c0529",
+        "acc1d33a16935bf1"
+      ],
+      "color": "orange"
+    }
+  },
+  "bookmarkIcons": {},
+  "tagIcons": {},
+  "propertyIcons": {},
+  "ribbonIcons": {},
+  "fileRules": [],
+  "folderRules": []
+}
