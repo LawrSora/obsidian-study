@@ -4,5 +4,6 @@
 tags:
   - тип/лекция
   - проектирование
+  - ис/теория
 ---
 ![[Cache/Untitled Diagram 1.svg]]

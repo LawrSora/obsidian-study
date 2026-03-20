@@ -1,24 +1,80 @@
 {
   "collapse-filter": false,
   "search": "",
-  "showTags": true,
+  "showTags": false,
   "showAttachments": false,
-  "hideUnresolved": false,
+  "hideUnresolved": true,
   "showOrphans": true,
-  "collapse-color-groups": false,
+  "collapse-color-groups": true,
   "colorGroups": [
     {
-      "query": "path:\"Практические работы\"  ",
+      "query": "tag:#бэкенд/бд  ",
+      "color": {
+        "a": 1,
+        "rgb": 6375183
+      }
+    },
+    {
+      "query": "file:веб-разработка",
+      "color": {
+        "a": 1,
+        "rgb": 14701242
+      }
+    },
+    {
+      "query": "tag:#тестирование  ",
+      "color": {
+        "a": 1,
+        "rgb": 6348586
+      }
+    },
+    {
+      "query": "tag:#бэкенд",
+      "color": {
+        "a": 1,
+        "rgb": 13076250
+      }
+    },
+    {
+      "query": "tag:#ис ",
+      "color": {
+        "a": 1,
+        "rgb": 5429216
+      }
+    },
+    {
+      "query": "tag:#по  ",
+      "color": {
+        "a": 1,
+        "rgb": 1603277
+      }
+    },
+    {
+      "query": "tag:#фронтенд  ",
       "color": {
         "a": 1,
         "rgb": 14701138
       }
     },
     {
-      "query": "path:Конспекты  ",
+      "query": "[\"дисциплина\":ДМ",
       "color": {
         "a": 1,
-        "rgb": 5429216
+        "rgb": 15461772
+      }
+    },
+    {
+      "query": "tag:кодинг",
+      "color": {
+        "a": 1,
+        "rgb": 4987493
+      }
+    },
+    {
+      "query": "tag:#документирование  ",
+      "color": {
+        "a": 1,
+        "rgb": 3812232
       }
     }
   ],
@@ -27,11 +83,11 @@
   "textFadeMultiplier": 0,
   "nodeSizeMultiplier": 1.00155925155925,
   "lineSizeMultiplier": 1,
-  "collapse-forces": true,
-  "centerStrength": 0.518713248970312,
-  "repelStrength": 10,
+  "collapse-forces": false,
+  "centerStrength": 0,
+  "repelStrength": 20,
   "linkStrength": 1,
   "linkDistance": 250,
-  "scale": 0.08317427835927593,
+  "scale": 0.03018289506732538,
   "close": true
 }
