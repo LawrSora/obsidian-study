@@ -11,5 +11,5 @@
     "downscalePercent": 100
   },
   "openBehavior": "daily",
-  "propertiesInDocument": "source"
+  "propertiesInDocument": "visible"
 }

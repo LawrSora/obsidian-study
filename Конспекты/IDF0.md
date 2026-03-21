@@ -3,6 +3,7 @@
 курс: 2
 tags:
   - проектирование
+  - документирование
 ---
 ---
 ## Определение IDEF0
@@ -106,3 +107,7 @@ tags:
 ---
 ## Ресурсы
 *   [Стандарт IDEF0 (PDF)](https://studentgo.space/media/task_files/professor/1/86/idef_standart.pdf)
+
+---
+Ссылки:
+[[Проектирование]]

@@ -123,3 +123,4 @@ span {
 ---
 Ссылки: 
 https://doka.guide/css/font-weight/
+[[CSS]]

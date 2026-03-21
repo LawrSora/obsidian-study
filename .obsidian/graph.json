@@ -1,6 +1,6 @@
 {
   "collapse-filter": false,
-  "search": "",
+  "search": "path:Конспекты  ",
   "showTags": false,
   "showAttachments": false,
   "hideUnresolved": true,
@@ -88,6 +88,6 @@
   "repelStrength": 20,
   "linkStrength": 1,
   "linkDistance": 250,
-  "scale": 0.03018289506732538,
+  "scale": 0.010952991388875804,
   "close": true
 }
