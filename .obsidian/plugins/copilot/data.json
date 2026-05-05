@@ -467,6 +467,7 @@
   "defaultSystemPromptTitle": "",
   "autoCompactThreshold": 128000,
   "enableMiyo": false,
-  "miyoVaultName": "",
-  "selfHostSearchProvider": "firecrawl"
+  "selfHostSearchProvider": "firecrawl",
+  "miyoSearchAll": false,
+  "miyoServerUrl": ""
 }

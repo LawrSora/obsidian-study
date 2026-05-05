@@ -1,0 +1,9 @@
+{% extends "tracker/base.html" %}
+{% block content %}
+
+<p>Имя пользователя: {{ user.username }} </p>
+<p>Дата регистрации: {{ user.date_joined }}</p>
+
+<a href="{% url 'logout' %}">Выйти</a>
+
+{% endblock %}

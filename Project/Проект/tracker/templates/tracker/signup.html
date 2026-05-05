@@ -1,0 +1,17 @@
+{% extends "tracker/base.html" %}
+{% load static %}
+
+{% block content %}
+
+<main class="container">
+<h2>Регистрация</h2>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Отправить</button>
+    </form>
+
+<a href="{% url 'login' %}">Войти</a>
+
+</main>
+{% endblock %}

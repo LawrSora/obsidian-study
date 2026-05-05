@@ -1,0 +1,113 @@
+{% extends "tracker/base.html" %}
+{% load static %}
+
+{% block content %}
+    <main class="index__main">
+
+        {% if request.user.is_authenticated %}
+
+        <section class="left__nav">
+            <div class="container__nav">
+            <nav class="nav">
+                <ul>
+
+                    <li class="nav__item">
+                        <a href="{% url 'profile' %}" class="nav__link">
+                            <div class="svg__icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-user-round-icon lucide-user-round"><circle cx="12" cy="8" r="5"/><path d="M20 21a8 8 0 0 0-16 0"/></svg>
+                            </div>
+                            <div class="nav__link__text">
+                            Профиль
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="/habit_maker" class="nav__link">
+                            <div class="svg__icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-plus-icon lucide-circle-plus"><circle cx="12" cy="12" r="10"/><path d="M8 12h8"/><path d="M12 8v8"/></svg>
+                            </div>
+                            <div class="nav__link__text">
+                            Добавить привычку
+                            </div>
+                        </a>
+                    </li>
+
+                    {% if time_delta == 5 %}
+                    {{ time_delta }}
+                    {% endif %}
+
+                    {% if request.user.is_superuser %}
+
+                    <li class="nav__item">
+                        <a href="admin" class="nav__link">
+                            <div class="nav__link__text">
+                            Панель администратора
+                            </div>
+                        </a>
+                    </li>
+
+                    {% endif %}
+
+                </ul>
+            </nav>
+        </div>
+
+        <div class="black__border"></div>
+
+        </section>
+
+        <section class="content">
+            <div class="container__habits">
+
+                {% for habit in habits_list %}
+                <div class="habit">
+
+                    <div class="checkbox__container">
+                        <div class="checkbox__button">
+                            <input type="checkbox">
+                        </div>
+
+                        <label>
+                            {{ habit.name }}
+                        </label>
+                    </div>
+
+                    <div class="habit__menu__button__container">
+                        <button class="habit__menu__button"></button>
+                    </div>
+                </div>
+                {% endfor %}
+
+            </div>
+        </section>
+
+        <section class="calendar__container">
+            <div class="black__border"></div>
+
+            <div class="calendar">
+                <table class="calendar__content">
+                    <tr>
+                        {% for day in days_tr %}
+                        <td>{{ day }}</td>
+                        {% endfor %}
+                    </tr>
+                    <tr><td>Пн</td><td>Вт</td><td>Ср</td><td>Чт</td><td>Пт</td><td>Сб</td><td>Вс</td></tr>
+                    <tr><td>Пн</td><td>Вт</td><td>Ср</td><td>Чт</td><td>Пт</td><td>Сб</td><td>Вс</td></tr>
+                    <tr><td>Пн</td><td>Вт</td><td>Ср</td><td>Чт</td><td>Пт</td><td>Сб</td><td>Вс</td></tr>
+                    <tr><td>Пн</td><td>Вт</td><td>Ср</td><td>Чт</td><td>Пт</td><td>Сб</td><td>Вс</td></tr>
+                    <tr><td>Пн</td><td>Вт</td><td>Ср</td><td>Чт</td><td>Пт</td><td>Сб</td><td>Вс</td></tr>
+                    <tr><td>Пн</td><td>Вт</td><td>Ср</td><td>Чт</td><td>Пт</td><td>Сб</td><td>Вс</td></tr>
+                </table>
+            </div>
+
+            {{ today }}
+            {{ first_day }}
+            {{ calendar_array }}
+        </section>
+
+
+    </main>
+    {% endif %}
+
+{% endblock %}

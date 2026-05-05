@@ -1,0 +1,49 @@
+{% extends "tracker/base.html" %}
+{% load static %}
+
+{% block content %}
+
+<!-- Отображение сообщений -->
+
+<main class="container">
+
+    <h1>Вход</h1>
+
+{% for message in messages %}
+    <div>{{ message }}</div>
+{% endfor %}
+
+<!-- Форма для ввода учетных данных -->
+<div class="form__container">
+<form method="post">
+    {% csrf_token %}
+    
+    <div class="form-field">
+        <label for="username" class="form-label"></label>
+        <input type="text" 
+               name="username" 
+               id="username" 
+               class="form-input"
+               placeholder="Имя пользователя"
+               required>
+    </div>
+
+    <div class="form-field">
+        <label for="password" class="form-label"></label>
+        <input type="password" 
+               name="password" 
+               id="password" 
+               class="form-input"
+               placeholder="Пароль"
+               required>
+    </div>
+
+    <button type="submit" class="submit-btn">Войти</button>
+
+    <a href="{% url 'registration' %}">Регистрация</a>
+</form>
+</div>
+
+</main>
+
+{% endblock %}

@@ -1,0 +1,9 @@
+{
+	"nodes":[
+		{"id":"3855ca8b34bf53a9","x":-500,"y":-380,"width":260,"height":320,"type":"text","text":"MVP"},
+		{"id":"83c4541f7a4de854","type":"file","file":"Project/cache/ТЗ MVP Grail.md","x":-470,"y":-270,"width":200,"height":100},
+		{"id":"4c88e372f3e02549","x":40,"y":-380,"width":700,"height":320,"type":"text","text":"Полноценно жизнеспособный продукт"},
+		{"id":"8d32676471a8bb6f","x":80,"y":-293,"width":270,"height":125,"type":"file","file":"Project/cache/Актуальность.md"}
+	],
+	"edges":[]
+}
